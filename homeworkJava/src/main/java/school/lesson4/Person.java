@@ -1,16 +1,16 @@
 package school.lesson4;
 
 public class Person {
-    private String FNLN;
+    private String FirstNameAndLastName;
     private String position;
     private String email;
     private long phoneNumber;
     private String salary;
     private int age;
 
-    public Person(String FNLN, String position, String email, long phoneNumber,
+    public Person(String FirstNameAndLastName, String position, String email, long phoneNumber,
                   String salary, int age) {
-        this.FNLN = FNLN;
+        this.FirstNameAndLastName = FirstNameAndLastName;
         this.position = position;
         this.email = email;
         this.phoneNumber = phoneNumber;
@@ -20,7 +20,7 @@ public class Person {
 
     public void info() {
 
-        System.out.println(" ФИО: " + FNLN + "; \n должность: " + position +
+        System.out.println(" ФИО: " + FirstNameAndLastName + "; \n должность: " + position +
                 "; \n email: " + email + "; \n номер телефона: " + phoneNumber +
                 "; \n зарплата: " + salary + "; \n возраст: " + age);
     }
@@ -28,7 +28,7 @@ public class Person {
     // variant 2
     public String toString() {
         return "{" +
-                "ФИО: " + FNLN + ";\n" +
+                "ФИО: " + FirstNameAndLastName + ";\n" +
                 " должность: " + position + ";\n" +
                 " email: " + email + ";\n" +
                 " телефон: " + phoneNumber + ";\n" +
