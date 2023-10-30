@@ -19,13 +19,12 @@ public class Person {
     }
 
     public void info() {
-
         System.out.println(" ФИО: " + FirstNameAndLastName + "; \n должность: " + position +
                 "; \n email: " + email + "; \n номер телефона: " + phoneNumber +
                 "; \n зарплата: " + salary + "; \n возраст: " + age);
     }
 
-    // variant 2
+    // variant 2 (info method)
     public String toString() {
         return "{" +
                 "ФИО: " + FirstNameAndLastName + ";\n" +
@@ -63,7 +62,6 @@ public class Person {
                 System.out.println(persArray[i]);
             }
         }
-
         System.out.println();
 
         // информация об объекте
