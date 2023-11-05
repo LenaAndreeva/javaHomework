@@ -21,6 +21,6 @@ public class Plate {
     }
 
     public void info() {
-        System.out.println("Количество еды - " + food);
+        System.out.println("Amount of food in the plate: " + food);
     }
 }

@@ -14,10 +14,10 @@ public class Animal {
     }
 
     public void run(int distance) {
-        System.out.println("Животное пробежало" + distance + " m");
+        System.out.println("The animal ran " + distance + " meters");
     }
 
     public void swim(int distance) {
-        System.out.println("Животное проплыло" + distance + " m");
+        System.out.println("The animal swam" + distance + " meters");
     }
 }

@@ -1,13 +1,11 @@
 package school.lesson5.Figures;
 
-public class Rectangle implements figureInterface{
-    double figurePerimeter;
-    double figureArea;
-    float sideA, sideB;
+public class Rectangle implements FigureInterface {
+    double sideA, sideB;
     String fillColor;
     String borderColor;
 
-    public Rectangle(float sideA, float sideB, String fillColor, String borderColor) {
+    public Rectangle(double sideA, double sideB, String fillColor, String borderColor) {
         this.sideA = sideA;
         this.sideB = sideB;
         this.fillColor = fillColor;
@@ -16,18 +14,18 @@ public class Rectangle implements figureInterface{
 
     @Override
     public double figurePerimeter() {
-        return figurePerimeter = 2 * (sideA + sideB) ;
+        return 2 * (sideA + sideB);
     }
 
     @Override
     public double figureArea() {
-        return figureArea = sideA * sideB;
+        return sideA * sideB;
     }
 
     public void info() {
-        System.out.println("Периметр прямоугольника: " + figurePerimeter() + "\n"
-                + "Площадь прямоугольника: " + figureArea()
-                + "\n" + "Цвет заливки прямоугольника: " + fillColor
-                + "\n" + "Цвет границ прямоугольника: " + borderColor);
+        System.out.println("Rectangle perimeter: " + figurePerimeter() + "\n"
+                + "Area of a rectangle: " + figureArea() + "\n"
+                + "Rectangle fill color: " + fillColor + "\n"
+                + "Rectangle border color: " + borderColor);
     }
 }

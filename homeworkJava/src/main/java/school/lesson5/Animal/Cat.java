@@ -15,13 +15,13 @@ public class Cat extends Animal {
 
     public void run(int distance) {
         if (distance <= runDistLimit) {
-            System.out.println("Кот " + name + " пробежал " + distance + " метров");
+            System.out.println("Cat " + name + " ran " + distance + " meters");
         } else {
-            System.out.println("Кот " + name + " не может пробежать больше 200 метров");
+            System.out.println("Cat " + name + " cannot run more than 200 meters");
         }
     }
 
     public void swim(int distance) {
-        System.out.println("Кот " + name + " не умеет плавать");
+        System.out.println("Cat " + name + " can't swim");
     }
 }

@@ -16,17 +16,17 @@ public class Dog extends Animal{
 
     public void run(int distance) {
         if (distance <= runDistLimit) {
-            System.out.println("Собака " + name + " пробежал " + distance + " метров");
+            System.out.println("Dog " + name + " ran " + distance + " meters");
         } else {
-            System.out.println("Собака " + name + " не может пробежать больше 500 метров");
+            System.out.println("Dog " + name + " cannot run more than 500 meters");
         }
     }
 
     public void swim(int distance) {
         if (distance <= swimDistLimit) {
-            System.out.println("Собака " + name + " проплыл " + distance + " метров");
+            System.out.println("Dog " + name + " swam " + distance + " meters");
         } else {
-            System.out.println("Собака " + name + " не может проплыть больше 10 метров");
+            System.out.println("Dog " + name + " cannot swim more than 10 meters");
         }
     }
 }

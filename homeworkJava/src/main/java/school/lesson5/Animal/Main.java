@@ -1,6 +1,6 @@
 package school.lesson5.Animal;
 
-public class AnimalApp {
+public class Main {
     public static void main(String[] args) {
         Animal catBob;
         Animal catBill;
@@ -13,13 +13,18 @@ public class AnimalApp {
         dogTuzik = new Dog("Tuzik");
 
 
-        catBob.run(201);
+        catBob.run(199);
+        catBill.run(201);
         catBill.swim(5);
         dogSharik.run(450);
+        dogSharik.run(501);
         dogTuzik.swim(10);
+        dogSharik.swim(12);
 
-        System.out.println("Всего животных: " + Animal.getCountAnimal());
-        System.out.println("Всего котов: " + Cat.getCountCat());
-        System.out.println("Всего собак: " + Dog.getCountDog());
+        System.out.println();
+
+        System.out.println("Quantity of animals: " + Animal.getCountAnimal());
+        System.out.println("Quantity of cats: " + Cat.getCountCat());
+        System.out.println("Quantity of dogs: " + Dog.getCountDog());
     }
 }

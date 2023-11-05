@@ -1,14 +1,24 @@
 package school.lesson5.CatsAndPlates;
 
-public class MainApp {
+public class Main {
     public static void main(String[] args) {
         Cat charlie = new Cat("Charlie", 4);
-        Plate plate = new Plate(3);
+        Plate charliePlate = new Plate(3);
 
-        plate.info();
-        charlie.eat(plate);
-        plate.info();
+        Cat bob = new Cat("Bob", 10);
+        Plate bobPlate = new Plate(10);
+
+        charliePlate.info();
+        charlie.eat(charliePlate);
+        charliePlate.info();
         charlie.info();
+
+        System.out.println();
+
+        bobPlate.info();
+        bob.eat(bobPlate);
+        bobPlate.info();
+        bob.info();
 
         System.out.println();
 
@@ -19,18 +29,18 @@ public class MainApp {
         arrCats[3] = new Cat("Murka", 10);
         arrCats[4] = new Cat("Milka", 21);
 
-        Plate plate1 = new Plate(100);
+        Plate arrOfCatsPlate = new Plate(100);
 
-        plate1.info();
+        arrOfCatsPlate.info();
 
 
         for (int i = 0; i < arrCats.length; i++) {
-            if(!arrCats[i].satiety && arrCats[i].hungerLevel <= plate1.food) {
-                arrCats[i].eat(plate1);
+            if(!arrCats[i].satiety && arrCats[i].hungerLevel <= arrOfCatsPlate.food) {
+                arrCats[i].eat(arrOfCatsPlate);
                 arrCats[i].satiety = true;
-                System.out.println("Кот " + arrCats[i].name + " поел и сыт");
+                System.out.println("Cat " + arrCats[i].name + " has eaten and is full");
             } else {
-                System.out.println("Кот " + arrCats[i].name + " не поел и голоден");
+                System.out.println("Cat " + arrCats[i].name + " has not eaten and is hungry");
             }
         }
 
@@ -39,7 +49,7 @@ public class MainApp {
         // вариант 2 -  получение информации о сытости котов через метод info
 
         for (int i = 0; i < arrCats.length; i++) {
-            arrCats[i].eat(plate1);
+            arrCats[i].eat(arrOfCatsPlate);
             arrCats[i].info();
         }
 
@@ -47,8 +57,8 @@ public class MainApp {
 
         // наполнение тарелки едой
 
-        plate1.info();
-        plate1.addFood(50);
-        plate1.info();
+        arrOfCatsPlate.info();
+        arrOfCatsPlate.addFood(50);
+        arrOfCatsPlate.info();
     }
 }

@@ -5,8 +5,6 @@ public class Cat {
     int hungerLevel;
     boolean satiety;
 
-    int fullnesLevel;
-
     public Cat(String name, int hungerLevel) {
         this.name = name;
         this.hungerLevel = hungerLevel;
@@ -21,9 +19,9 @@ public class Cat {
 
     public void info() {
         if (satiety) {
-            System.out.println("Кот " + name + " сыт");
+            System.out.println("Cat " + name + " is full");
         } else {
-            System.out.println("Кот " + name + " голоден");
+            System.out.println("Cat " + name + " is hungry");
         }
     }
 }
