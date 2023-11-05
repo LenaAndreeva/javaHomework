@@ -2,6 +2,7 @@ package school.lesson5.CatsAndPlates;
 
 public class Main {
     public static void main(String[] args) {
+
         Cat charlie = new Cat("Charlie", 4);
         Plate charliePlate = new Plate(3);
 

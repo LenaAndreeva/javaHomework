@@ -2,6 +2,7 @@ package school.lesson5.Animal;
 
 public class Main {
     public static void main(String[] args) {
+
         Animal catBob;
         Animal catBill;
         Animal dogSharik;
