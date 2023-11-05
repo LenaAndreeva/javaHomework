@@ -34,7 +34,6 @@ public class Main {
 
         arrOfCatsPlate.info();
 
-
         for (int i = 0; i < arrCats.length; i++) {
             if(!arrCats[i].satiety && arrCats[i].hungerLevel <= arrOfCatsPlate.food) {
                 arrCats[i].eat(arrOfCatsPlate);
