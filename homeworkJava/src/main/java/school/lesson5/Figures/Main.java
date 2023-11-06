@@ -12,7 +12,7 @@ public class Main {
 
         System.out.println();
 
-        Triangle triangle1 = new Triangle(3,4, 5, "Purple", "Green");
+        Triangle triangle1 = new Triangle(3, 4, 5, "Purple", "Green");
         triangle1.info();
     }
 }
