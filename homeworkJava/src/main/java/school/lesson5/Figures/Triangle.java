@@ -1,9 +1,9 @@
 package school.lesson5.Figures;
 
 public class Triangle implements FigureInterface {
-    double sideA, sideB, sideC;
-    String fillColor;
-    String borderColor;
+    private double sideA, sideB, sideC;
+    private String fillColor;
+    private String borderColor;
 
     public Triangle(double sideA, double sideB, double sideC, String fillColor, String borderColor) {
         this.sideA = sideA;

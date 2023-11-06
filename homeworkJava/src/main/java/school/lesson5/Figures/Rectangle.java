@@ -1,9 +1,9 @@
 package school.lesson5.Figures;
 
 public class Rectangle implements FigureInterface {
-    double sideA, sideB;
-    String fillColor;
-    String borderColor;
+    private double sideA, sideB;
+    private String fillColor;
+    private String borderColor;
 
     public Rectangle(double sideA, double sideB, String fillColor, String borderColor) {
         this.sideA = sideA;

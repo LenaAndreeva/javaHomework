@@ -1,9 +1,9 @@
 package school.lesson5.Figures;
 
 public class Circle implements FigureInterface {
-    double radius;
-    String fillColor;
-    String borderColor;
+    private double radius;
+    private String fillColor;
+    private String borderColor;
 
     public Circle(double radius, String fillColor, String borderColor) {
         this.radius = radius;
