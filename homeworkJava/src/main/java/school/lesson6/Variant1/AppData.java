@@ -24,7 +24,7 @@ public class AppData {
     // methods
 
     public void saveFile(String filename) {
-        try (PrintWriter writer = new PrintWriter(new FileWriter(filename))) {
+        try (PrintWriter writer = new PrintWriter(new FileWriter(filename, false))) {
 
             for (int i = 0; i < header.length; i++) {
                 writer.print(header[i]);
