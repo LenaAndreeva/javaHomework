@@ -23,8 +23,8 @@ public class AppData {
 
     // methods
 
-    public void saveFile(String filename) {
-        try (PrintWriter writer = new PrintWriter(new FileWriter(filename, false))) {
+    public void saveFile(String fileName) {
+        try (PrintWriter writer = new PrintWriter(new FileWriter(fileName, false))) {
 
             for (int i = 0; i < header.length; i++) {
                 writer.print(header[i]);
@@ -48,12 +48,12 @@ public class AppData {
         }
     }
 
-    public void loadFile(String filename) {
-        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
+    public void loadFile(String fileName) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
 
             String headerLine = reader.readLine();
             header = headerLine.split(";");
-            data = new int[linesCount(filename) - 1][header.length];
+            data = new int[linesCount(fileName) - 1][header.length];
 
             String line;
             int rowIndex = 0;
@@ -71,9 +71,9 @@ public class AppData {
         }
     }
 
-    private int linesCount(String filename) throws IOException {
+    private int linesCount(String fileName) throws IOException {
         int lines = 0;
-        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
             while (reader.readLine() != null) {
                 lines++;
             }
