@@ -1,6 +1,6 @@
 package school.lesson7;
 
-public class MyArraySizeException extends ExceptionConstructor{
+public class MyArraySizeException extends ArrayException {
     public MyArraySizeException(String message) {
         super(message);
     }

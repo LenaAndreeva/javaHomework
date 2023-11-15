@@ -20,7 +20,7 @@ public class Main {
                 {"6", "17", "9", "1"},
                 {"16", "3", "11", "13"},
                 {"2", "12", "4", "14"},
-                {"7", "Hi!", "6", "5"}
+                {"7", "7", "6", "Hi"}
         };
 
         ProcessArray processArray = new ProcessArray();
