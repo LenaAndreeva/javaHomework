@@ -4,9 +4,9 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
-        List<String> collection = Arrays.asList("f10", "f15", "f2", "f4", "f4");
+        CollectionData collectionData = new CollectionData();
 
-        String[] sortedArr = SortingCollection.sortAscending(collection);
+        String[] sortedArr = SortingCollection.sortAscending(collectionData.getCollection());
         System.out.println("Sorted list: " + Arrays.toString(sortedArr));
 
     }

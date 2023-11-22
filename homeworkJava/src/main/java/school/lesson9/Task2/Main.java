@@ -4,15 +4,15 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
-        List<String> words = Arrays.asList("Highload", "High", "Load", "Highload");
+        WordsData wordsData = new WordsData();
 
-        long countOfWord = FindElementsProcessor.countOfEl(words);
+        long countOfWord = FindElementsProcessor.countOfEl(wordsData.getWords());
         System.out.println("'High' appears " + countOfWord + " time/times");
 
-        String firstEl = FindElementsProcessor.findFirsEl(words);
+        String firstEl = FindElementsProcessor.findFirsEl(wordsData.getWords());
         System.out.println("First element in the collection: " + firstEl);
 
-        String lastEl = FindElementsProcessor.findLastEl(words);
+        String lastEl = FindElementsProcessor.findLastEl(wordsData.getWords());
         System.out.println("Last element in the collection: " + lastEl);
     }
 }
