@@ -23,7 +23,7 @@ public class LoginProcessor {
     public void printLoginsStartingWithF() {
         System.out.println("Logins starting with the letter 'f':");
         userLogins.stream()
-                .filter(login -> login.toLowerCase().startsWith("f"))
+                .filter(l -> l.toLowerCase().startsWith("f"))
                 .forEach(System.out::println);
     }
 }
