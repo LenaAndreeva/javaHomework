@@ -16,7 +16,7 @@ public class RandomNumbersProcessor {
 
     public static int[] generateRandomNumbers2(int count) {
         return IntStream.range(0, count)
-                .map(i -> (int) (Math.random() * 10))
+                .map(n -> (int) (Math.random() * 10))
                 .toArray();
     }
 }

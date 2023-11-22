@@ -6,8 +6,8 @@ public class Main {
 
         List<String> words = Arrays.asList("Highload", "High", "Load", "Highload");
 
-        long countofHigh = FindElementsProcessor.countOfEl(words);
-        System.out.println("'High' appears " + countofHigh + " time/times");
+        long countOfWord = FindElementsProcessor.countOfEl(words);
+        System.out.println("'High' appears " + countOfWord + " time/times");
 
         String firstEl = FindElementsProcessor.findFirsEl(words);
         System.out.println("First element in the collection: " + firstEl);
